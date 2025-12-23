@@ -11,11 +11,12 @@
 
   --gradient: linear-gradient(90deg, #ff323f 0%, #ff37e4 100%);
   --light: #ffffff;
+  --light-gray: #e9e9e9;
 }
 
 body {
   font-family: var(--font-lato);
-  background-color: #333;
+  font-size: 16px;
 }
 
 a {
@@ -23,17 +24,29 @@ a {
   color: inherit;
 }
 
+.main {
+  color: var(--light);
+  background-image: url(../images/bg-main.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  max-width: 1600px;
   padding: 15px 25px;
   box-sizing: border-box;
   background-color: var(--light);
   border-radius: 16px;
-  margin: 0 auto; /*я добавила сама*/
 }
 
 .logo {
@@ -58,11 +71,11 @@ a {
   gap: 6px;
   padding: 20px 18px;
   font-family: var(--font-nunito);
-  font-size: 16px;
   font-weight: 900;
   background: var(--gradient);
   border-radius: 10px;
   color: var(--light);
+  width: fit-content;
 }
 
 .btn-accent::before {
@@ -73,4 +86,100 @@ a {
   background-image: url(../images/btn-icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 13px 15px;
+  border: 1px solid var(--light);
+  border-radius: 8px;
+  font-family: var(--font-nunito);
+  font-size: 12px;
+  width: fit-content;
+}
+
+.badge::before {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url(../images/icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.title-h1 {
+  font-family: var(--font-nunito);
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 44px 0 32px 0;
+  margin-bottom: 32px;
+}
+
+.description {
+  color: var(--light-gray);
+  line-height: 1.6;
+}
+
+.text-small {
+  font-family: var(--font-nunito);
+  font-size: 12px;
+  color: var(--light-gray);
+  margin: 0;
+}
+
+.title-h2 {
+  font-family: var(--font-nunito);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 32px 0;
+}
+
+/* Hero */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 106px;
+}
+
+.description-hero {
+ max-width: 556px;
+ margin-bottom: 40px; 
+}
+
+.brands {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px 55px;
+  margin-top: 100px;
+}
+
+.brands .text-small {
+  flex-basis: 100%;
+}
+
+/* Screen */
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.screen .badge {
+  color: var(--light-gray);
+  border: 1px solid var(--light-gray);
+}
+
+.description-screen {
+ max-width: 564px;
+ text-align: center;
+ margin-bottom: 60px;
 }

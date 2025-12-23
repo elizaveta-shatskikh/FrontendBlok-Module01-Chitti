@@ -1,0 +1,32 @@
+<svg viewBox="0 0 9.99951 10" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9.999512" height="10.000000" fill="none" customFrame="#000000">
+	<defs>
+		<clipPath id="clipPath_0">
+			<rect width="9.999377" height="10.000000" x="0.000000" y="0.000000" fill="rgb(255,255,255)" />
+		</clipPath>
+		<linearGradient id="paint_linear_4" x1="5" x2="9.9993782" y1="7.5" y2="7.5" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(255,50,63)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(255,55,228)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_5" x1="5" x2="9.9993782" y1="2.49999976" y2="2.49999976" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(255,50,63)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(255,55,228)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_6" x1="0" x2="5" y1="7.5" y2="7.5" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(255,50,63)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(255,55,228)" offset="1" stop-opacity="1" />
+		</linearGradient>
+		<linearGradient id="paint_linear_7" x1="0" x2="5" y1="2.49999976" y2="2.49999976" gradientUnits="userSpaceOnUse">
+			<stop stop-color="rgb(255,50,63)" offset="0" stop-opacity="1" />
+			<stop stop-color="rgb(255,55,228)" offset="1" stop-opacity="1" />
+		</linearGradient>
+	</defs>
+	<g id="Group 1000001826">
+		<g id="Calque_1" clip-path="url(#clipPath_0)" customFrame="url(#clipPath_0)">
+			<rect id="Calque_1" width="9.999377" height="10.000000" x="0.000000" y="0.000000" />
+			<path id="Vector" d="M5 5C5 7.76131 7.23807 10 9.99938 10C9.99938 7.23869 7.76131 5 5 5Z" fill="url(#paint_linear_4)" fill-rule="nonzero" />
+			<path id="Vector" d="M9.99938 0C7.23807 0 5 2.23807 5 5C7.76131 5 9.99938 2.76193 9.99938 0Z" fill="url(#paint_linear_5)" fill-rule="nonzero" />
+			<path id="Vector" d="M0 10C2.76131 10 5 7.76131 5 5C2.23807 5 0 7.23807 0 10Z" fill="url(#paint_linear_6)" fill-rule="nonzero" />
+			<path id="Vector" d="M0 0C0 2.76131 2.23807 5 5 5C5 2.23807 2.76131 0 0 0Z" fill="url(#paint_linear_7)" fill-rule="nonzero" />
+		</g>
+	</g>
+</svg>
