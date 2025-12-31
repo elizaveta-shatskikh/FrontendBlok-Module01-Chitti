@@ -15,6 +15,7 @@
   --gray: #4e4e4e;
   --line: #aeaeae;
   --dark: #0e0e0e;
+  --outline: #b8b8b8;
 }
 
 body {
@@ -33,7 +34,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
-  padding-bottom: 120px;
+  padding-bottom: 117px;
 }
 
 .container {
@@ -52,7 +53,7 @@ a {
   box-sizing: border-box;
   background-color: var(--light);
   border-radius: 16px;
-  margin: 0 auto 106px;
+  margin: 0 auto 80px;
 }
 
 .logo {
@@ -119,6 +120,10 @@ a {
   background-image: url(../images/icon.svg);
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.badge-center {
+  margin: 0 auto;
 }
 
 .title-h1 {
@@ -195,12 +200,14 @@ a {
   flex-basis: 100%;
 }
 
+.hero-image {
+  padding-top: 26px;
+}
+
 /* Screen */
 
 .screen {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .screen .badge {
@@ -212,9 +219,7 @@ a {
 
 .description-screen {
  max-width: 564px;
- text-align: center;
- margin-top: 0;
- margin-bottom: 54px;
+ margin: 0 auto 54px auto;
 }
 
 .image-screen {
@@ -226,12 +231,16 @@ a {
 
 .section-advantages {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 117px;
 }
 
 .advantages {
   display: flex;
-  gap: 133px;
+  gap: 7vw;
+}
+
+.advantages-text {
+  flex-basis: 607px;
 }
 
 .advantages-text .badge {
@@ -253,4 +262,115 @@ a {
 .advantages-list-text .description {
   margin-top: 0;
   margin-bottom: 6px;
+  max-width: 430px;
+}
+
+.advantages-image {
+  align-self: center;
+  flex-basis: calc(100% - 607px - 7vw);
+}
+
+.advantages-image img {
+  width: 100%;
+}
+
+/* App */
+
+.section-app {
+  margin-bottom: 124px;
+}
+
+.app {
+  display: flex;
+  gap: 4.3vw;
+  margin-bottom: 20px;
+}
+
+.app-image {
+  align-self: center;
+  flex-basis: calc(100% - 688px - 4.3vw);
+  position: relative;
+  max-width: 766px;
+}
+
+.app-image img {
+  width: 100%;
+  /*  */
+}
+
+.app-gray {
+  width: 100%;
+  height: 93%;
+  background-color: var(--light-gray);
+  border-radius: 16px;
+  position: absolute;
+  z-index: -1;
+  top: 3%;
+  right: -22px;
+}
+
+.app-text {
+  flex-basis: 688px;
+}
+
+.app-text .badge {
+  gap: 9px;
+  margin-top: 73px;
+  margin-bottom: 20px;
+}
+
+.description-app {
+  margin-top: 0;
+  margin-bottom: 39px;
+  max-width: 465px;
+}
+
+.app-list {
+  max-width: 506px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 21px;
+  padding-left: 29px;
+  margin-bottom: 55px;
+}
+
+.app-item {
+  font-family: var(--font-nunito);
+  font-size: 20px;
+  font-weight: 700;
+  /* margin-right: 1px; */
+}
+
+.app-text .btn-accent {
+  padding: 16px 15px;
+}
+
+.steps {
+  display: flex;
+  gap: 25px;
+}
+
+.steps .title-h4 {
+  margin-top: 12px;
+}
+
+.steps-item {
+  border: solid 1px var(--outline);
+  border-radius: 16px;
+  padding-top: 63px;
+  padding-left: 46px;
+  padding-right: 47px;
+  padding-bottom: 26px;
+}
+
+.steps-item .description {
+  max-width: 284px;
+  margin-top: 12px;
+  margin-bottom: 41px;
+}
+
+hr {
+  border: none;
+  border-top: solid 2px var(--outline);
+  /* margin-bottom: 10px; */
 }
