@@ -68,6 +68,10 @@ a {
   z-index: 9999;
 }
 
+.header.scroll {
+  border: solid 1px var(--outline);
+}
+
 .logo {
   display: block;
   width: 105px;
@@ -249,6 +253,16 @@ a {
   color: var(--dark);
   margin-top: 29px;
   margin-bottom: 6px;
+}
+
+.title-h5 {
+  font-family: var(--font-nunito);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--dark);
+  margin-top: 51px;
+  margin-bottom: 16px;
 }
 
 /* Hero */
@@ -586,15 +600,7 @@ a {
 .info-item:nth-child(3) {
 }
 
-.title-h5 {
-  font-family: var(--font-nunito);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.4;
-  color: var(--dark);
-  margin-top: 51px;
-  margin-bottom: 16px;
-}
+/* Languages */
 
 .languages {
   display: flex;
@@ -603,12 +609,12 @@ a {
 }
 
 .languages-item {
-  margin: 0 39px;
-  padding-left: 20px;
-  border-radius: 10px;
   display: flex;
   gap: 9px;
   background-color: var(--light);
+  border-radius: 10px;
+  margin: 0 39px;
+  padding-left: 20px;
 }
 
 .text-list {
@@ -617,4 +623,63 @@ a {
 }
 
 .info-item:nth-child(4) {
+}
+
+/* FAQ */
+
+.faq .title-h5 {
+  margin-bottom: 26px;
+}
+
+.faq-list {
+  text-align: left;
+}
+
+.faq-details {
+  background-color: var(--light);
+  border-radius: 10px;
+  margin: 0 39px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.faq-details:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.faq-details > .faq-summary:first-of-type {
+   list-style: none;
+}
+
+.faq-summary {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.faq-summary:after {
+   content: "+";
+   background: var(--gradient);
+   border-radius: 15px;
+   width: 20px;
+   height: 20px;
+   position: absolute;
+   top: calc(50% - 10px);
+   right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: var(--light);
+}
+
+.faq-details[open] > .faq-summary:after {
+   content: "-";
+}
+
+.description-summary {
+  padding: 10px;
+  margin: 0;
+  transition: var(--tr); /* пока не увидела плавность раскрытия этого сообщения */
 }
