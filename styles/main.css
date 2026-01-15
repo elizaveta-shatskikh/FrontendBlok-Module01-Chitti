@@ -175,6 +175,26 @@ a {
   background-size: contain;
 }
 
+.btn-line {
+  background: #0f152c;
+  border: 1px solid var(--gradient);
+  margin: 0 auto;
+  padding: 15px 36px;
+}
+
+.btn-line::before {
+  content: '';
+  display: block;
+  background: var(--gradient);
+  position: absolute;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  border-radius: 10px;
+  z-index: -1;
+}
+
 .badge {
   display: flex;
   align-items: center;
@@ -261,7 +281,6 @@ a {
   font-weight: 700;
   line-height: 1.4;
   color: var(--dark);
-  /* margin-top: 51px; */
   margin-bottom: 16px;
 }
 
@@ -534,7 +553,7 @@ a {
 
 .section-product {
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 115px;
 }
 
 .product {
@@ -596,12 +615,10 @@ a {
 
 .info-item:nth-child(2) {
   grid-column: 2 / 4;
-  border: none;
-}
-
-.info-item:nth-child(2) img {
-  width: 100%;
-  height: 100%;
+  background-image: url(/images/info/screen-code.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
 }
 
 .info-item:nth-child(3) {
@@ -650,18 +667,14 @@ a {
 .faq-details {
   background-color: var(--light);
   border-radius: 10px;
-  margin: 0 39px;
+  margin: 0 39px 20px;
   padding-left: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-.faq-details {
-  margin-bottom: 20px;
-}
-
 .faq-details > .faq-summary:first-of-type {
-   list-style: none;
+  list-style: none;
 }
 
 .faq-summary {
@@ -671,27 +684,163 @@ a {
   cursor: pointer;
 }
 
-.faq-summary:after {
-   content: "+";
-   background: var(--gradient);
-   border-radius: 15px;
-   width: 20px;
-   height: 20px;
-   position: absolute;
-   top: calc(50% - 10px);
-   right: 20px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   color: var(--light);
+.faq-summary::before {
+  content: "";
+  display: block;
+  border-radius: 15px;
+  width: 20px;
+  height: 20px;
+  background: var(--gradient);
+  position: absolute;
+  top: calc(50% - 11px);
+  right: 20px;
 }
 
-.faq-details[open] > .faq-summary:after {
-   content: "-";
+
+.faq-summary::after {
+  content: "";
+  border-radius: 15px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/plus.svg);
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+  background-position: center center;
+  position: absolute;
+  top: calc(50% - 11px);
+  right: 20px;
+}
+
+.faq-details[open] > .faq-summary::before {
+  background: var(--line);
+}
+
+.faq-details[open] > .faq-summary::after {
+  background-image: url(../images/minus.svg);
 }
 
 .description-summary {
   padding: 10px;
   margin: 0;
-  transition: var(--tr); /* пока не увидела плавность раскрытия этого сообщения */
+}
+
+/* Section Free */
+
+.section-free {
+  color: var(--light);
+  background-image: url(../images/bg-free.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.free {
+  display: flex;
+  justify-content: end;
+  text-align: center;
+}
+
+.free-text {
+  padding-right: 114px;
+  padding-top: 125px;
+  padding-bottom: 135px;
+  position: relative;
+  z-index: 0;
+}
+
+.free-text .title-h2 {
+  max-width: 420px;
+  margin: 0 auto;
+  margin-bottom: 11px;
+}
+
+.free-text .description {
+  max-width: 350px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 141px;
+  padding-bottom: 35px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #a7a7a7;
+  padding-bottom: 69px;
+}
+
+.footer-top .logo {
+  background: none;
+  display: flex;
+}
+
+.footer-top span::before {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-image: url(../images/logo-footer.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-top span {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-family: var(--font-nunito);
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.social-list {
+  display: flex;
+  gap: 14px;
+  padding-top: 9px;
+}
+
+.social-link {
+  display:inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.tg {
+  background-image: url(../images/social/telegram.svg);
+}
+
+.tg:hover {
+  background-image: url(../images/social/telegram-hover.svg);
+}
+
+.vk {
+  background-image: url(../images/social/vk.svg);
+}
+
+.vk:hover {
+  background-image: url(../images/social/vk-hover.svg);
+}
+
+.yt {
+  background-image: url(../images/social/youtube.svg);
+}
+
+.yt:hover {
+  background-image: url(../images/social/youtube-hover.svg);
+}
+
+.footer-bottom {
+  padding-top: 3px;
+}
+
+.footer-bottom .title-h5 {
+  text-align: center;
 }
