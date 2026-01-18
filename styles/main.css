@@ -42,7 +42,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
-  padding-bottom: 117px;
+  padding-bottom: 118px;
 }
 
 .container {
@@ -70,6 +70,12 @@ a {
 
 .header.scroll {
   border: solid 1px var(--outline);
+}
+
+.header-control {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .logo {
@@ -175,6 +181,18 @@ a {
   background-size: contain;
 }
 
+.btn-burger {
+  background: transparent;
+  border: none;
+  display: none;
+  width: 34px;
+  height: 22px;
+  background-image: url(../images/burger-menu.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 .btn-line {
   background: #0f152c;
   border: 1px solid var(--gradient);
@@ -205,7 +223,7 @@ a {
   font-family: var(--font-nunito);
   font-size: 12px;
   width: fit-content;
-  margin-bottom: 28px;
+  margin-bottom: 30px;
 }
 
 .light .badge {
@@ -275,7 +293,8 @@ a {
   margin-bottom: 6px;
 }
 
-.title-h5 {
+.title-h5,
+.copyright {
   font-family: var(--font-nunito);
   font-size: 20px;
   font-weight: 700;
@@ -317,11 +336,12 @@ a {
 
 .hero-image {
   padding-top: 26px;
+  padding-right: 98px;
 }
 
 .image-robot {
   width: 100%;
-  max-width: 974px;
+  max-width: 834px;
 }
 
 /* Screen */
@@ -351,7 +371,7 @@ a {
 
 .section-advantages {
   padding-top: 120px;
-  padding-bottom: 117px;
+  padding-bottom: 116px;
 }
 
 .advantages {
@@ -553,7 +573,7 @@ a {
 
 .section-product {
   margin-top: 120px;
-  margin-bottom: 115px;
+  margin-bottom: 116px;
 }
 
 .product {
@@ -772,7 +792,7 @@ a {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #a7a7a7;
-  padding-bottom: 54px;
+  padding-bottom: 55px;
 }
 
 .footer-top .logo {
@@ -784,11 +804,11 @@ a {
 .social-list {
   display: flex;
   gap: 14px;
-  padding-top: 9px;
+  padding-top: 15px;
 }
 
 .social-link {
-  display:inline-block;
+  display: block;
   width: 30px;
   height: 30px;
   background-repeat: no-repeat;
@@ -824,6 +844,120 @@ a {
   padding-top: 3px;
 }
 
-.footer-bottom .title-h5 {
+.copyright {
   text-align: center;
+}
+
+@media (max-width: 1600px) {
+  .main {
+    padding-top: 20px;
+    padding-bottom: 96px;
+  }
+
+  .container {
+    max-width: 1170px;
+  }
+
+  .header {
+    max-width: calc(1170px - 30px);
+    padding-right: 26px;
+    padding-left: 24px;
+  }
+
+  .nav {
+    gap: 20px;
+  }
+
+  .title-h1 {
+    font-size: 62px;
+  }
+
+  .section-hero {
+    margin-top: 148px;
+    margin-bottom: 96px;
+  }
+
+  .hero {
+    gap: 3vw;
+  }
+
+  .hero-text {
+    flex-basis: 609px;
+    padding-top: 38px;
+  }
+
+
+  .description-hero {
+    margin-top: 27px;
+    margin-bottom: 34px;
+  }
+
+  .brands {
+    justify-content: center;
+     gap: 25px 36px;
+     margin-top: 99px;
+  }
+
+  .hero-image {
+    flex-basis: calc(100% - 609px - 3vw);
+    padding-right: 0;
+    padding-top: 23px;
+  }
+
+  .description-screen {
+    margin-bottom: 46px;
+  }
+
+  .image-screen {
+    max-width: 1010px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .main {
+    padding-top: 30px;
+  }
+
+  .btn-burger {
+    display: block;
+  }
+
+  .nav,
+  .hero-image {
+    display: none;
+  }
+
+  .hero {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-top: 32px;
+  }
+
+  .badge,
+  .btn-accent,
+  .description-hero {
+    margin: 0 auto;
+  }
+
+  .hero-text .badge {
+    margin-bottom: 31px;
+  }
+
+  .description-hero {
+    margin-top: 32px;
+    margin-bottom: 30px;
+  }
+
+  .brands {
+    justify-content: space-around;
+    margin-top: 78px;
+    gap: 25px 0;
+  }
+
+  .description-screen {
+    margin-bottom: 44px;
+  }
 }
