@@ -85,6 +85,7 @@ a {
   background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center left;
 }
 
 .nav {
@@ -191,6 +192,7 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  cursor: pointer;
 }
 
 .btn-line {
@@ -848,6 +850,63 @@ a {
   text-align: center;
 }
 
+.modal {
+  background-color: #0f152c;
+  border-radius: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 97%;
+  z-index: 9999;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 30px auto 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--tr);
+}
+
+.modal.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal .nav {
+  display: flex;
+  flex-direction: column;
+  color: var(--light);
+  text-align: center;
+  padding: 43px 0;
+  gap: 13px;
+}
+
+.modal .nav-link:hover {
+  color: var(--light);
+}
+
+.modal .nav-link::before,
+.modal .nav-link::after {
+  content: none;
+}
+
+.btn-close {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background-image: url(../images/close.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
 @media (max-width: 1600px) {
   .main {
     padding-top: 20px;
@@ -1297,5 +1356,61 @@ a {
 
   .footer-bottom {
     padding-top: 4px;
+  }
+}
+
+@media (max-width: 650px) {
+  .title-h1 {
+    font-size: clamp(33px, 9vw, 62px);
+  }
+
+  .title-h2 {
+    font-size: 26px;
+  }
+
+  .title-h3 {
+    font-size: 18px;
+  }
+
+  .title-h4 {
+    font-size: 16px;
+  }
+
+  .btn-accent,
+  .description,
+  .title-h5,
+  .app-item,
+  .copyright {
+    font-size: 14px;
+  }
+
+  .brands img {
+    width: 22%;
+  }
+
+  .app-list {
+    max-width: 340px;
+    padding-left: 27px;
+    gap: 15px;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .faq-summary {
+    align-items: center;
+  }
+
+  .faq-summary img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .logo {
+    height: 20px;
   }
 }
