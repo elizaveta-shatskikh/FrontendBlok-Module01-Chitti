@@ -869,7 +869,8 @@ a {
   transition: var(--tr);
 }
 
-.modal.active {
+.modal.active,
+.btn-up.visible {
   opacity: 1;
   visibility: visible;
 }
@@ -906,6 +907,30 @@ a {
   position: absolute;
   right: 30px;
   top: 20px;
+}
+
+.btn-up {
+  display: block;
+  width: 35px;
+  height: 57px;
+  background-image: url(../images/btn-up.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--tr);
+}
+
+.btn-up.hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media (max-width: 1600px) {
@@ -1133,7 +1158,8 @@ a {
   }
 
   .nav,
-  .hero-image {
+  .hero-image,
+  .btn-up {
     display: none;
   }
 
