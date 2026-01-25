@@ -1,56 +1,88 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chitti</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/normalize.min.css">
-  <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-  <main class="main">
-    <header>
-      <div class="container">
-        <div class="header">
-          <a href="" class="logo"></a>
-          <nav class="nav">
-            <a href="index.html" class="nav-link">Главная</a>
-            <a href="#navAbout" class="nav-link">О нас</a>
-            <a href="#navAdvantages" class="nav-link">Преимущества</a>
-            <a href="/" class="nav-link">Наша команда</a>
-            <a href="pricing.html" class="nav-link">Тарифы</a>
-            <a href="contact.html" class="nav-link">Контакты</a>
-          </nav>
-          <a href="" class="btn-accent"><span>Регистрация</span></a>
-        </div>
-      </div>
-    </header>
-
-    <section class="section-hero">
-      <div class="container">
-        <div class="hero">
-          <div class="hero-text">
-            <span class="badge">Наша команда</span>
-            <h1 class="title-h1">Мы строим этот AI бот вместе, чтобы радовать вас</h1>
-            <p class="description description-hero">Вы устали отвечать каждому клиенту вручную или делать контент с нуля? Тогда вам точно нужен такой помощник!</p>
-            <a href="" class="btn-accent"><span>Регистрация</span></a>
-            <div class="brands">
-              <p class="text-small">Нам доверяют</p>
-              <img src="images/brands/brand-1.svg" alt="Hiliment">
-              <img src="images/brands/brand-2.svg" alt="Round">
-              <img src="images/brands/brand-3.svg" alt="Midnew">
-              <img src="images/brands/brand-4.svg" alt="Jackal">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitti</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  
+  <body>
+    <main class="main">
+      <header>
+        <div class="container">
+          <div class="header scroll">
+            <a href="index.html" class="logo"></a>
+            <nav class="nav">
+              <a href="index.html" class="nav-link">Главная</a>
+              <a href="#navAbout" class="nav-link">О нас</a>
+              <a href="#navAdvantages" class="nav-link">Преимущества</a>
+              <a href="/" class="nav-link">Наша команда</a>
+              <a href="pricing.html" class="nav-link">Тарифы</a>
+              <a href="contact.html" class="nav-link">Контакты</a>
+            </nav>
+            <div class="header-control">
+                <a href="" class="btn-accent"><span>Регистрация</span></a>
+                <button type="button" class="btn-burger" id="btnBurger"></button>
             </div>
           </div>
-          <div class="hero-image">
-            <img src="images/robot.png" alt="Робот">
+        </div>
+      </header>
+      <section class="section-hero">
+        <div class="container">
+          <div class="hero">
+            <div class="hero-text">
+              <span class="badge">Наша команда</span>
+              <h1 class="title-h1">Мы строим этот AI бот вместе, чтобы радовать вас</h1>
+              <p class="description description-hero">Вы устали отвечать каждому клиенту вручную или делать контент с нуля? Тогда вам точно нужен такой помощник!</p>
+              <a href="" class="btn-accent"><span>Регистрация</span></a>
+              <div class="brands">
+                <p class="text-small">Нам доверяют</p>
+                <img src="images/brands/brand-1.svg" alt="Hiliment">
+                <img src="images/brands/brand-2.svg" alt="Round">
+                <img src="images/brands/brand-3.svg" alt="Midnew">
+                <img src="images/brands/brand-4.svg" alt="Jackal">
+              </div>
+            </div>
+            <div class="hero-image">
+              <img class="image-robot" src="images/robot.png" alt="Робот">
+            </div>
           </div>
         </div>
+    </main>
+
+    <footer class="footer" id="navContact">
+      <div class="container">
+        <div class="footer-top">
+          <a href="/" class="logo"></a>
+          <div class="social-list">
+            <a href="" class="social-link tg" target="_blank"></a>
+            <a href="" class="social-link vk" target="_blank"></a>
+            <a href="" class="social-link yt" target="_blank"></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="copyright">Copyright © 2025, ChittiAI</p>
+        </div>
       </div>
-    </section>
-  </main>
-</body>
+    </footer>
+
+    <div class="modal" id="modal">
+        <nav class="nav">
+          <a href="/" class="nav-link">Главная</a>
+          <a href="#navAbout" class="nav-link">О нас</a>
+          <a href="#navAdvantages" class="nav-link">Преимущества</a>
+          <a href="team.html" class="nav-link">Наша команда</a>
+          <a href="pricing.html" class="nav-link">Тарифы</a>
+          <a href="#navContact" class="nav-link">Контакты</a>
+        </nav>
+        <button type="button" class="btn-close" id="btnClose"></button>
+    </div>
+  </body>
+
+  <script src="scripts/script.js"></script>
 </html>
