@@ -1469,6 +1469,10 @@ a {
     gap: 10px;
   }
 
+  .steps-line {
+    background: var(--gradient);
+  }
+
   .info {
     grid-template-rows: 100vw 41vw auto auto;
   }
