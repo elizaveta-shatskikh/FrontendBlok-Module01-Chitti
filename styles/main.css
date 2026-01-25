@@ -522,6 +522,7 @@ a {
   z-index: -1;
   opacity: 0;
   transition: var(--tr);
+  border-radius: 14px;
 }
 
 .steps-item:hover::before {
@@ -1221,6 +1222,10 @@ a {
     margin-right: auto;
   }
 
+  .app-text .badge {
+    gap: 12px;
+  }
+
   .description-app {
     text-align: center;
     margin-right: auto;
@@ -1243,7 +1248,7 @@ a {
   }
 
   .section-product {
-    margin-bottom: 147px;
+    margin-bottom: 99px;
   }
 
   .product .badge {
@@ -1264,7 +1269,7 @@ a {
 
   .info {
     grid-template-columns: 1fr;
-    grid-template-rows: 46.9% 330px 420px 150px;
+    grid-template-rows: 100vw 330px auto auto;
   }
   
   .info-item:nth-child(1) {
@@ -1285,11 +1290,16 @@ a {
     grid-column: 1 / 2;
     grid-row: 4 / 5;
     padding-left: 29px;
+    padding-bottom: 18px;
   }
 
   .info-item:nth-child(4) {
     grid-column: 1 / 2;
     grid-row: 3 / 4 ;
+  }
+
+  .faq {
+    padding-bottom: 45px;
   }
 
   .faq .title-h5 {
@@ -1298,21 +1308,21 @@ a {
 
   .support {
     align-items: start;
-    gap: 7vw;
+    gap: 7.5vw;
   }
 
   .support .title-h5 {
     margin-top: 11px;
+    margin-left: 6px;
   }
 
   .languages {
     flex-wrap: wrap;
-    gap: 1px;
+    gap: 10px;
   }
 
   .languages-item {
-    flex-basis: 186px;
-    margin-bottom: 8px;
+    flex-basis: 24vw;
   }
 
   .section-free {
@@ -1343,7 +1353,7 @@ a {
   }
 
   .footer-top {
-    padding-bottom: 30px;
+    padding-bottom: 29px;
   }
 
   .footer-top .logo {
@@ -1355,7 +1365,37 @@ a {
   }
 
   .footer-bottom {
-    padding-top: 4px;
+    padding-top: 3px;
+  }
+}
+
+@media (max-width: 705px) {
+  .info-item:nth-child(3) {
+    padding-left: 17px;
+    padding-bottom: 19px;
+    padding-right: 21px;
+  }
+
+  .support {
+    flex-direction: column;
+    gap: 8.2vw;
+  }
+
+  .support .title-h5 {
+    flex-basis: 0;
+    margin: 6px auto 0;
+  }
+
+  .languages {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .languages-item {
+    flex-basis: auto;
+    padding-left: 5.6vw;
   }
 }
 
@@ -1373,7 +1413,7 @@ a {
   }
 
   .title-h4 {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .btn-accent,
@@ -1382,6 +1422,10 @@ a {
   .app-item,
   .copyright {
     font-size: 14px;
+  }
+
+  .description-hero {
+    font-size: 16px;
   }
 
   .brands img {
@@ -1399,6 +1443,10 @@ a {
     gap: 10px;
   }
 
+  .info {
+    grid-template-rows: 100vw 41vw auto auto;
+  }
+
   .faq-summary {
     align-items: center;
   }
@@ -1410,7 +1458,259 @@ a {
 }
 
 @media (max-width: 400px) {
+  .main {
+    padding-top: 21px;
+    padding-bottom: 76px;
+  }
+
+  .header {
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+  }
+
   .logo {
     height: 20px;
+  }
+
+  .header-control {
+    gap: 15px;
+  }
+
+  .header .btn-accent {
+    padding-top: 13px;
+    padding-right: 16px;
+    padding-bottom: 11px;
+    padding-left: 14px;
+  }
+
+  .section-hero {
+    margin-top: 108px;
+    margin-bottom: 81px;
+  }
+
+  .hero-text .badge {
+    margin-bottom: 30px;
+  }
+
+   .description-hero {
+    margin-top: 22px;
+    margin-bottom: 33px;
+    max-width: 310px;
+  }
+
+  .hero-text .btn-accent {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
+  .brands {
+    justify-content: space-between;
+    margin-top: 48px;
+  }
+
+  .screen .badge {
+    margin-bottom: 18px;
+  }
+
+  .description-screen {
+    margin-bottom: 27px;
+  }
+
+  .section-advantages {
+    padding-top: 69px;
+    padding-bottom: 75px;
+  }
+
+  .advantages-text .badge {
+    margin-bottom: 25px;
+  }
+
+  .light .title-h2 {
+    margin-bottom: 5px;
+  }
+
+  .description-advantages {
+    margin-bottom: 40px;
+  }
+
+  .advantages-item {
+    gap: 20px;
+    align-items: start;
+  }
+
+  .advantages-item:not(:last-child) {
+    margin-bottom: 22px;
+  }
+
+  .advantages-item img {
+    max-width: 30px;
+    margin-top: 5px;
+  }
+
+  .title-h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .advantages {
+    gap: 8vw;
+  }
+
+  .advantages-image img {
+    border-radius: 16px;
+  }
+
+  .app-text .badge {
+    margin-bottom: 26px;
+  }
+
+  .description-app {
+    margin-bottom: 36px;
+  }
+
+  .app-list {
+    padding-left: 0;
+    gap: 0;
+    margin-bottom: 16px;
+  }
+
+  .app-item {
+    margin-bottom: 9px;
+    margin-left: 22px;
+  }
+
+  .app-item:nth-child(even) {
+    margin-left: 41px;
+
+  }
+
+  .app-text .btn-accent {
+    padding: 17px 23px;
+  }
+
+  .steps {
+    gap: 7px;
+  }
+
+  .steps-item {
+    padding: 32px 30px 36px 29px;
+  }
+
+  .steps .title-h4 {
+    margin-top: 6px;
+    font-size: 16px;
+  }
+
+  .description-steps {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .section-product {
+    margin-top: 81px;
+    margin-bottom: 80px;
+  }
+
+  .product .badge {
+    margin-bottom: 24px;
+  }
+
+  .product .title-h2 {
+    max-width: 250px;
+    margin-bottom: 6px;
+  }
+
+  .description-product {
+    margin-bottom: 30px;
+  }
+
+  .info {
+    gap: 10px;
+  }
+
+  .info-item:nth-child(1) {
+    border-radius: 7px;
+  }
+
+  .faq {
+    padding-bottom: 9px;
+  }
+
+  .faq .title-h5 {
+    margin-top: 7px;
+    margin-bottom: 15px;
+  }
+
+  .faq-details {
+    margin-top: 0;
+    margin-right: 21px;
+    margin-bottom: 20px;
+    margin-left: 17px;
+    padding-left: 11px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .faq-summary::before,
+  .faq-summary::after {
+    top: calc(50% - 10px);
+    right: 10px;
+  }
+
+  .free {
+    display: block;
+  }
+
+  .free-text {
+    padding-top: 34px;
+    padding-bottom: 41px;
+  }
+
+  .free-text .title-h2 {
+    max-width: 230px;
+    margin-bottom: 22px;
+  }
+
+  .free-text .description {
+    max-width: 280px;
+    margin-bottom: 37px;
+  }
+
+  .btn-line {
+    width: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .btn-accent span {
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding-top: 35px;
+  }
+
+  .footer-top {
+    padding-bottom: 22px;
+  }
+
+  .footer-top .logo {
+    height: 41px;
+  }
+
+  .footer-bottom {
+    margin-top: 0;
+  }
+
+  .copyright {
+    margin-top: 6px;
+  }
+
+  .modal {
+    margin-top: 20px;
   }
 }
