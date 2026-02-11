@@ -294,7 +294,7 @@ a {
   color: var(--dark);
 }
 
-.title-h4 {
+.title-h3 {
   font-family: var(--font-nunito);
   font-size: 26px;
   font-weight: 700;
@@ -499,7 +499,7 @@ a {
   gap: 24px;
 }
 
-.steps .title-h4 {
+.steps .title-h3 {
   margin-top: 12px;
 }
 
@@ -513,7 +513,7 @@ a {
 }
 
 .steps-item:hover .title-h2,
-.steps-item:hover .title-h4,
+.steps-item:hover .title-h3,
 .steps-item:hover .description {
   color: var(--light);
 }
@@ -1065,7 +1065,7 @@ a {
     padding: 27px 25px 36px 29px;
   }
 
-  .steps .title-h4 {
+  .steps .title-h3 {
     margin-top: 14px;
   }
 
@@ -1449,10 +1449,6 @@ a {
     font-size: 18px;
   }
 
-  .title-h4 {
-    font-size: 18px;
-  }
-
   .btn-accent,
   .description,
   .title-h5,
@@ -1592,7 +1588,7 @@ a {
     margin-top: 5px;
   }
 
-  .title-h4 {
+  .title-h3 {
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -1640,7 +1636,7 @@ a {
     padding: 32px 30px 36px 29px;
   }
 
-  .steps .title-h4 {
+  .steps .title-h3 {
     margin-top: 6px;
     font-size: 16px;
   }
