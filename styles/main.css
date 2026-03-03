@@ -68,6 +68,7 @@ a {
   box-sizing: border-box;
   background-color: var(--light);
   border-radius: 16px;
+  border: solid 1px var(--light);
   margin: 0 auto;
   position: fixed;
   z-index: 9999;
@@ -714,6 +715,7 @@ a {
   display: flex;
   gap: 10px;
   cursor: pointer;
+  padding-right: 40px;
 }
 
 .faq-summary::before {
@@ -822,33 +824,27 @@ a {
   display: block;
   width: 30px;
   height: 30px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: linear-gradient(90deg, #4e4e4e 0%, #4e4e4e 100%);
+  transition: var(--tr);
+}
+
+.social-link:hover {
+  background: linear-gradient(90deg, #ff323f 0%, #ff37e4 100%);
 }
 
 .tg {
-  background-image: url(../images/social/telegram.svg);
-}
-
-.tg:hover {
-  background-image: url(../images/social/telegram-hover.svg);
+  -webkit-mask: url(../images/social/telegram.svg) center/contain no-repeat;
+  mask: url(../images/social/telegram.svg) center/contain no-repeat;
 }
 
 .vk {
-  background-image: url(../images/social/vk.svg);
-}
-
-.vk:hover {
-  background-image: url(../images/social/vk-hover.svg);
+  -webkit-mask: url(../images/social/vk.svg) center/contain no-repeat;
+  mask: url(../images/social/vk.svg) center/contain no-repeat;
 }
 
 .yt {
-  background-image: url(../images/social/youtube.svg);
-}
-
-.yt:hover {
-  background-image: url(../images/social/youtube-hover.svg);
+  -webkit-mask: url(../images/social/youtube.svg) center/contain no-repeat;
+  mask: url(../images/social/youtube.svg) center/contain no-repeat;
 }
 
 .footer-bottom {
@@ -1154,6 +1150,7 @@ a {
 @media (max-width: 1000px) {
   .main {
     padding-top: 30px;
+    background-image: url(../images/bg-main-tablet.png);
   }
 
   .btn-burger {
@@ -1498,6 +1495,7 @@ a {
   .main {
     padding-top: 21px;
     padding-bottom: 76px;
+    background-image: url(../images/bg-main-mobile.png);
   }
 
   .header {
