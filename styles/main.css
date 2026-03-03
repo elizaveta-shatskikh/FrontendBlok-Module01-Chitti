@@ -680,9 +680,6 @@ a {
   margin: 17px 0;
 }
 
-.info-item:nth-child(4) {
-}
-
 /* FAQ */
 
 .faq {
@@ -825,7 +822,6 @@ a {
   width: 30px;
   height: 30px;
   background: linear-gradient(90deg, #4e4e4e 0%, #4e4e4e 100%);
-  transition: var(--tr);
 }
 
 .social-link:hover {
