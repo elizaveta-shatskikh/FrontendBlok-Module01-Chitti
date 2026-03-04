@@ -43,7 +43,7 @@ a {
 
 .main {
   color: var(--light);
-  background-image: url(../images/bg-main.png);
+  background-image: url(../images/bg-main.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 30px;
@@ -585,7 +585,7 @@ a {
 /* Product */
 
 .section-product {
-  margin-top: 120px;
+  padding-top: 120px;
   margin-bottom: 116px;
 }
 
@@ -758,7 +758,7 @@ a {
 
 .section-free {
   color: var(--light);
-  background-image: url(../images/bg-free.png);
+  background-image: url(../images/bg-free.webp);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -821,11 +821,20 @@ a {
   display: block;
   width: 30px;
   height: 30px;
-  background: linear-gradient(90deg, #4e4e4e 0%, #4e4e4e 100%);
+  background: linear-gradient(
+    90deg,
+    #4e4e4e 0%,
+    #4e4e4e 50%,
+    #ff323f 50%,
+    #ff37e4 100%
+    );
+  background-size: 200% 100%;
+  background-position: left;
+  transition: background-position .3s ease;
 }
 
 .social-link:hover {
-  background: linear-gradient(90deg, #ff323f 0%, #ff37e4 100%);
+  background-position: right;
 }
 
 .tg {
@@ -1067,7 +1076,7 @@ a {
   }
 
   .section-product {
-    margin-top: 100px;
+    padding-top: 100px;
     margin-bottom: 100px;
   }
 
@@ -1126,7 +1135,7 @@ a {
   }
 
   .section-free {
-    background-image: url(../images/bg-free-1140.png);
+    background-image: url(../images/bg-free-1140.webp);
   }
 
   .free-text {
@@ -1146,7 +1155,7 @@ a {
 @media (max-width: 1000px) {
   .main {
     padding-top: 30px;
-    background-image: url(../images/bg-main-tablet.png);
+    background-image: url(../images/bg-main-tablet.webp);
   }
 
   .btn-burger {
@@ -1491,7 +1500,7 @@ a {
   .main {
     padding-top: 21px;
     padding-bottom: 76px;
-    background-image: url(../images/bg-main-mobile.png);
+    background-image: url(../images/bg-main-mobile.webp);
   }
 
   .header {
@@ -1641,7 +1650,7 @@ a {
   }
 
   .section-product {
-    margin-top: 81px;
+    padding-top: 81px;
     margin-bottom: 80px;
   }
 
