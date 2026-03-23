@@ -68,14 +68,14 @@ a {
   box-sizing: border-box;
   background-color: var(--light);
   border-radius: 16px;
-  border: solid 1px var(--light);
+  border: 1px solid var(--light);
   margin: 0 auto;
   position: fixed;
   z-index: 9999;
 }
 
 .header.scroll {
-  border: solid 1px var(--outline);
+  border: 1px solid var(--outline);
 }
 
 .header-control {
@@ -505,7 +505,7 @@ a {
 }
 
 .steps-item {
-  border: solid 1px var(--outline);
+  border: 1px solid var(--outline);
   border-radius: 16px;
   padding: 63px 45px 34px;
   box-sizing: border-box;
@@ -625,7 +625,7 @@ a {
 }
 
 .info-item:not(:nth-child(1)) {
-  border: solid 1px var(--outline);
+  border: 1px solid var(--outline);
 }
 
 .info-item:nth-child(1) {
